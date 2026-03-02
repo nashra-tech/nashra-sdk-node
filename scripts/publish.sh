@@ -39,7 +39,7 @@ echo "New version: $NEW_VERSION"
 
 echo ""
 echo "Publishing dry run:"
-npm publish --dry-run
+npm publish --access public --dry-run
 
 echo ""
 read -p "Publish $NEW_VERSION to npm? (y/N) " -r
@@ -49,7 +49,7 @@ if [[ ! "$REPLY" =~ ^[Yy]$ ]]; then
   exit 1
 fi
 
-npm publish
+npm publish --access public
 
 git add package.json package-lock.json
 git commit -m "release: $NEW_VERSION"

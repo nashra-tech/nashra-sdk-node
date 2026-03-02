@@ -9,13 +9,13 @@ Official Node.js SDK for the [Nashra](https://nashra.ai) API. Zero runtime depen
 ## Installation
 
 ```bash
-npm install nashra
+npm install @nashra/sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { Nashra } from 'nashra';
+import { Nashra } from '@nashra/sdk';
 
 const nashra = new Nashra('your-api-key');
 
@@ -131,7 +131,7 @@ import {
   ValidationError,
   RateLimitError,
   ApiError,
-} from 'nashra';
+} from '@nashra/sdk';
 
 try {
   await nashra.subscribers.create({ email: 'invalid' });
@@ -164,7 +164,7 @@ import type {
   CustomField,
   Segment,
   NashraConfig,
-} from 'nashra';
+} from '@nashra/sdk';
 ```
 
 ## License

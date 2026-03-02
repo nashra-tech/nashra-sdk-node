@@ -1,5 +1,5 @@
 {
-  "name": "nashra",
+  "name": "@nashra/sdk",
   "version": "1.0.0",
   "description": "Official Node.js SDK for the Nashra API",
   "main": "./dist/index.cjs",

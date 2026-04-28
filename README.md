@@ -27,7 +27,7 @@ console.log(page.data); // Subscriber[]
 const subscriber = await nashra.subscribers.create({
   email: 'john@example.com',
   first_name: 'John',
-  tags: ['tag-uuid-1'],
+  tags: ['vip'],
 });
 ```
 
@@ -54,7 +54,7 @@ const subscriber = await nashra.subscribers.create({
   email: 'john@example.com',
   first_name: 'John',
   last_name: 'Doe',
-  tags: ['tag-uuid'],
+  tags: ['vip'],
   extra_attributes: { company: 'Acme' },
   notes: 'VIP customer',
 });
